@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav>
+    <nav className="noise shadow-lg py-3">
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center">
