@@ -8,8 +8,8 @@ const tailwindConfig = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        darkText: "#001120",
+        lightText: "#FFFFFF",
       },
     },
   },
