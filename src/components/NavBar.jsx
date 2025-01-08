@@ -22,7 +22,7 @@ export default function Navbar() {
             className="h-8 w-auto mr-2"
           />
           <span className="text-2xl font-semibold pt-2">
-            VIOLA BERGERE
+            VB
           </span>
         </Link>
 

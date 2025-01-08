@@ -1,9 +1,11 @@
-import { Montserrat_Alternates } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import GradientBackground from "@/components/GradientBackground";
+
+const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className={montserrat.className}>
         <GradientBackground />
         <Navbar/>
         <main>{children}</main>
