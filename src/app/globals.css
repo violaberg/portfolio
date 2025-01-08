@@ -290,3 +290,26 @@ p {
     opacity: 0.7;
   }
 }
+
+/* Buttons */
+.primaryBtn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: var(--white);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.primaryBtn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Contact page */
+.input {
+  border: 1px solid rgba(255,255,255,0.1);
+}

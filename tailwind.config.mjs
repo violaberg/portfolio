@@ -9,7 +9,12 @@ const tailwindConfig = {
     extend: {
       colors: {
         darkText: "#001120",
-        lightText: "#FFFFFF",
+        colorWhite: "#ffffff",
+        colorBrightPurple: "#6b4aff",
+        colorBlue: "#1271FF",
+        colorPurple: "#6464FF",
+        colorLightBlue: "#32A0DC",
+        colorMidPurple: "#502F7A",
       },
     },
   },
