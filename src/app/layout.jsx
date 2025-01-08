@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body>
         <GradientBackground />
         <Navbar/>
-        <main className="min-h-screen flex flex-col justify-between">{children}</main>
+        <main>{children}</main>
         <Footer/>
       </body>
     </html>
