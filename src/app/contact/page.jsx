@@ -5,7 +5,7 @@ import "../../app/globals.css";
 import { useState } from "react";
 import ContactForm from "../../components/ContactForm";
 
-function Contact() {
+const page = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleFormSubmit = (formData) => {
@@ -46,4 +46,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default page;

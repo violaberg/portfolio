@@ -1,6 +1,6 @@
 "use client";
 
-export default function Home() {
+const Home = () => {
 
   return (
     <div className="items-center justify-items-center">
@@ -25,4 +25,6 @@ export default function Home() {
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
   );
-}
+};
+
+export default Home;

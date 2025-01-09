@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import "../app/globals.css";
 
-export default function GradientBackground() {
+const GradientBackground = () => {
   useEffect(() => {
     const interBubble = document.querySelector(".interactive");
     let curX = 0;
@@ -70,4 +70,6 @@ export default function GradientBackground() {
           </div>
   </div>
   );
-}
+};
+
+export default GradientBackground;

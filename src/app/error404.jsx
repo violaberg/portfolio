@@ -1,4 +1,4 @@
-const page = () => {
+export default function Error404() {
   return (
     <div className="card">
               <svg viewBox="0 0 100% 100%" xmlns="http://www.w3.org/2000/svg" className="noise">
@@ -9,14 +9,12 @@ const page = () => {
               </svg>
               <div className="content">
                 <h1 className="justify-self-center">
-                  About Me
+                  Not Found
                 </h1>
                 <div className="mx-auto text-center my-3">
-                  <a href="/contact" className="primaryBtn rounded-lg shadow-lg font-semibold p-3">Contact Me</a>
+                  <a href="/" className="primaryBtn rounded-lg shadow-lg font-semibold p-3">Back to Home page</a>
                 </div>
               </div>
           </div>
   );
-};
-
-export default page;
+}
