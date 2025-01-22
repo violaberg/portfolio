@@ -28,7 +28,7 @@ const page = () => {
             </h1>
             <div className="w-full max-w-5xl mx-auto my-3 flex flex-col">
               <p className="text-center">
-                Please feel free to contact me by filling out this form. Alternatively, don't hesitate to reach out on <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener noreferrer" className="font-bold tracking-wider">LinkedIn</a>
+                Got a question or would like to collaborate? Feel free to contact me by filling out this form. Alternatively, don't hesitate to reach out on <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener noreferrer" className="font-bold tracking-wider">LinkedIn</a>
               </p>
               {isSubmitted && (
                 <div className="w-full max-w-xl text-center flex flex-col font-semibold">

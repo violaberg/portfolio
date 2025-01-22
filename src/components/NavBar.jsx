@@ -16,14 +16,8 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center">
-          <img
-            src="#"
-            alt="Logo"
-            className="h-8 w-auto mr-2"
-          />
-          <span className="text-2xl font-semibold pt-2">
-            VB
-          </span>
+          <img src="#" alt="Logo" className="h-8 w-auto mr-2" />
+          <span className="text-2xl font-semibold pt-2">VB</span>
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -40,7 +34,10 @@ export default function Navbar() {
           <Link href="/experience" className="font-semibold px-2 pt-2">
             Experience
           </Link>
-          <Link href="/contact" className="font-semibold pt-2">
+          <Link
+            href="/contact"
+            className="primaryBtn rounded-lg shadow-lg font-semibold px-3 py-2"
+          >
             Contact
           </Link>
         </div>
@@ -64,19 +61,39 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden flex flex-col items-center px-4 py-3 space-y-4">
-          <Link href="/" className="block font-semibold" onClick={toggleMobileMenu}>
+          <Link
+            href="/"
+            className="block font-semibold"
+            onClick={toggleMobileMenu}
+          >
             Home
           </Link>
-          <Link href="/about" className="block font-semibold" onClick={toggleMobileMenu}>
+          <Link
+            href="/about"
+            className="block font-semibold"
+            onClick={toggleMobileMenu}
+          >
             About
           </Link>
-          <Link href="/projects" className="block font-semibold" onClick={toggleMobileMenu}>
+          <Link
+            href="/projects"
+            className="block font-semibold"
+            onClick={toggleMobileMenu}
+          >
             Projects
           </Link>
-          <Link href="/experience" className="block font-semibold" onClick={toggleMobileMenu}>
+          <Link
+            href="/experience"
+            className="block font-semibold"
+            onClick={toggleMobileMenu}
+          >
             Experience
           </Link>
-          <Link href="/contact" className="block font-semibold" onClick={toggleMobileMenu}>
+          <Link
+            href="/contact"
+            className="block font-semibold"
+            onClick={toggleMobileMenu}
+          >
             Contact
           </Link>
         </div>
