@@ -28,6 +28,11 @@
   border: none;
 }
 
+main {
+  display: grid;
+  place-items: center;
+}
+
 html,
 body {
   margin: 0;

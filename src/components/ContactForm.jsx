@@ -29,7 +29,7 @@ function ContactForm({ onSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mx-auto p-2">
+    <form onSubmit={handleSubmit} className="w-full">
       <div className="mb-4">
         <label htmlFor="name" className="block">
           Name

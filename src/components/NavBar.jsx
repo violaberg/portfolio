@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from 'next/image'
 import { FaBars, FaTimes } from "react-icons/fa";
+import vbLogo from '/public/logo.png'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,8 +18,12 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center">
-          <img src="#" alt="Logo" className="h-8 w-auto mr-2" />
-          <span className="text-2xl font-semibold pt-2">VB</span>
+          <Image
+          src={vbLogo}
+          alt="logo"
+          width={40}
+          height={40}
+          className="h-full w-full" />
         </Link>
 
         {/* Desktop Navigation Links */}
