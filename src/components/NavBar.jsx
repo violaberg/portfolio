@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from 'next/image'
 import { FaBars, FaTimes } from "react-icons/fa";
-import vbLogo from '/public/logo.png'
+import vbLogo from '/public/images/logo.png'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

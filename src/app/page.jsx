@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+import portfolioImage from "/public/images/portfolio-img.JPEG";
 
 const Home = () => {
   return (
@@ -35,6 +37,15 @@ const Home = () => {
             </p>
           </div>
         </div>
+              {/* Image Section */}
+      <div className="flex-1">
+        <Image
+          src={portfolioImage}
+          alt="Viola Bergere"
+          className="relative rounded-lg shadow-lg"
+          width={260}
+        />
+      </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
