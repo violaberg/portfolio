@@ -4,9 +4,10 @@ import portfolioImage from "/public/images/portfolio-img.JPEG";
 
 const Home = () => {
   return (
-    <div className="items-center justify-items-center">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <div className="card">
+    <div className="container flex items-center justify-center min-h-screen">
+        {/* Card with Text and Image */}
+        <div className="card flex flex-col gap-6 items-center sm:items-start">
+          {/* SVG Noise */}
           <svg
             viewBox="0 0 100% 100%"
             xmlns="http://www.w3.org/2000/svg"
@@ -27,26 +28,31 @@ const Home = () => {
               filter="url(#noiseFilter)"
             />
           </svg>
-          <div className="content">
-            <h1>Welcome and enjoy my gibberish</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              tempore unde ex pariatur distinctio laboriosam, dolorem quibusdam
-              aperiam expedita consequuntur dolorum porro vitae earum quos
-              voluptates et maxime. Tempora, mollitia.
+
+          {/* Text Section */}
+          <div className="content flex-1">
+            <h1 className="text-center">
+              Viola Bergere
+            </h1>
+            <h2 className="text-center">Full Stack Developer</h2>
+            <p className="mt-4 text-center">
+              Passionate about crafting innovative, user-friendly applications.
+              Explore my work and let's bring ideas to life together!
             </p>
           </div>
+
+          {/* Image Section */}
+          <div className="flex-1 mx-auto">
+            <Image
+              src={portfolioImage}
+              alt="Viola Bergere"
+              className="rounded-lg shadow-lg"
+              width={260}
+              height={260}
+            />
+          </div>
         </div>
-              {/* Image Section */}
-      <div className="flex-1">
-        <Image
-          src={portfolioImage}
-          alt="Viola Bergere"
-          className="relative rounded-lg shadow-lg"
-          width={260}
-        />
-      </div>
-      </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
   );
