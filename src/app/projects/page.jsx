@@ -1,8 +1,12 @@
-import Projects from "@/components/Projects";
+import EmblaCarousel from "@/components/EmblaCarousel";
+
+const OPTIONS = {}
+const SLIDE_COUNT = 10
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const page = () => {
   return (
-    <div className="mt-36">
+    <div className="mt-36 min-h-screen">
       <div className="project-main-card mx-auto">
         <svg
           viewBox="0 0 100% 100%"
@@ -38,8 +42,8 @@ const page = () => {
       </div>
 
       {/* Projects Section */}
-      <div className="mt-12 px-4 sm:px-8">
-        <Projects />
+      <div>
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </div>
   );

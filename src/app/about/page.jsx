@@ -44,7 +44,7 @@ const page = () => {
               </p>
             </div>
           </section>
-          <div className="mx-auto text-center my-3">
+          <div className="mx-auto text-center">
             <a
               href="/contact"
               className="primaryBtn rounded-lg shadow-lg font-semibold mt-3 p-3"
