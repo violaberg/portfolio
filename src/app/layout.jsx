@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <GradientBackground />
         <Navbar />
-        <main className="p-3 container-fluid">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

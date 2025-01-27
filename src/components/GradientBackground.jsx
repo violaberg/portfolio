@@ -34,7 +34,7 @@ const GradientBackground = () => {
   }, []);
 
   return (
-    <div className="gradient-bg relative">
+    <div className="gradient-bg">
       {/* Noise Background */}
       <svg
         viewBox="0 0 100vw 100vw"
