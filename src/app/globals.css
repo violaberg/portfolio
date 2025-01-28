@@ -362,6 +362,13 @@ p {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Home page */
+.profile-img {
+  box-shadow:
+    6px 6px 10px rgba(0, 0, 0, 0.25),
+    -6px -6px 10px rgba(42, 53, 78, 0.5);
+}
+
 /* About page */
 .about-card {
   z-index: 10;

@@ -47,7 +47,7 @@ const Home = () => {
             <Image
               src={portfolioImage}
               alt="Viola Bergere"
-              className="profile-img rounded-lg shadow-xl mb-3 rotate-3"
+              className="profile-img rounded-lg mb-3 rotate-3"
               width={240}
               height={240}
             />
