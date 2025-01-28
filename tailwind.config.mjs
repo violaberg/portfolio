@@ -7,6 +7,10 @@ const tailwindConfig = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        neumorphic: "6px 6px 10px rgba(0, 0, 0, 0.25), -6px -6px 10px rgba(255, 255, 255, 0.8)",
+        neumorphicHover: "8px 8px 15px rgba(0, 0, 0, 0.25), -8px -8px 15px rgba(255, 255, 255, 0.8)",
+      },
       colors: {
         darkText: "#001120",
         colorWhite: "#ffffff",

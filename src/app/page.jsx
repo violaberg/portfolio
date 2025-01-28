@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import portfolioImage from "/public/images/portfolio-img.JPEG";
 
@@ -46,9 +47,9 @@ const Home = () => {
             <Image
               src={portfolioImage}
               alt="Viola Bergere"
-              className="profile rounded-lg shadow-lg mb-3"
-              width={260}
-              height={260}
+              className="profile-img rounded-lg shadow-xl mb-3 rotate-3"
+              width={240}
+              height={240}
             />
           </div>
         </div>

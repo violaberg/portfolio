@@ -18,6 +18,8 @@
 - [Vercel](https://vercel.com/)
 - Favicon and apple icon generated with [Favicon generator](https://www.favicon-generator.org/)
 - Logo created with [Canva](https://www.canva.com/)
+- Project carousel created with [Embla Carousel](https://www.embla-carousel.com/)
+- Tech icons taken from [Simple Icons](https://simpleicons.org/)
 
 ## Deploy on Vercel
 

@@ -1,6 +1,8 @@
+import TechStack from "@/components/TechStack";
+
 const page = () => {
   return (
-    <div className="container flex items-center justify-center min-h-screen">
+    <div className="container flex flex-col items-center justify-center min-h-screen">
       <div className="about-card relative">
         <svg
           viewBox="0 0 100% 100%"
@@ -54,6 +56,8 @@ const page = () => {
           </div>
         </div>
       </div>
+      {/* Tech Stack Section */}
+      <TechStack />
     </div>
   );
 };

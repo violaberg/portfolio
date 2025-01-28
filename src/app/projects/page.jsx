@@ -33,7 +33,7 @@ const page = () => {
           <p className="text-center">
             These projects showcase my expertise through practical examples of
             my work, featuring brief descriptions, links to code repositories,
-            and live sites. Many of these are hackathon projects that
+            and live sites. Some of these are hackathon projects that
             demonstrate not only my ability to tackle intricate challenges and
             adapt to diverse technologies but also my skill in collaborating
             effectively with teams under tight deadlines.

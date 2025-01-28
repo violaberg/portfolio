@@ -37,9 +37,6 @@ export default function Navbar() {
           <Link href="/projects" className="font-semibold pt-2">
             Projects
           </Link>
-          <Link href="/experience" className="font-semibold px-2 pt-2">
-            Experience
-          </Link>
           <Link
             href="/contact"
             className="primaryBtn rounded-lg shadow-lg font-semibold px-3 py-2"

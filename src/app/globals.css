@@ -50,7 +50,6 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
@@ -531,4 +530,18 @@ p {
   align-items: center;
   justify-content: center;
   width: 65%;
+}
+
+/* Tech Stack */
+.tech-icons {
+  border-radius: 8%;
+  filter: invert(100%) sepia(0%) saturate(7471%) hue-rotate(5deg) brightness(109%) contrast(110%);
+}
+
+/* Neumorphic style */
+.neumorphic-circle {
+  border-radius: 8%;
+  box-shadow:
+    6px 6px 10px rgba(0, 0, 0, 0.25),
+    -6px -6px 10px rgba(255, 255, 255, 0.5);
 }
