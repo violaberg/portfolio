@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
         <meta name="theme-color" content="#ffffff"></meta>
       </head>
-      <body className={montserrat.className}>
+      <body className={`${montserrat.className} h-full relative`}>
         <GradientBackground />
         <Navbar />
         <main className="p-3">{children}</main>

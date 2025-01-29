@@ -28,29 +28,18 @@
   border: none;
 }
 
-main {
-  place-items: center;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
 body {
   background: var(--color-bg2);
   color: var(--white);
-  font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  display: grid;
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
+  text-shadow: -3px 0px 2px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -62,7 +51,7 @@ nav {
   width: 100%;
   z-index: 15;
   display: flex;
-  text-shadow: -3px 0px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: -3px 0px 2px rgba(0, 0, 0, 0.2);
   &:before {
     content: "";
     position: absolute;
@@ -92,9 +81,8 @@ nav a {
 
 footer {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  bottom: 0;
   display: flex;
-  position: fixed;
+  margin-top: auto;
   text-shadow: -3px 0px 2px rgba(0, 0, 0, 0.1);
   &:before {
     content: "";
@@ -164,10 +152,6 @@ footer {
 h1 {
   font-size: 3rem;
   padding-bottom: 0.8rem;
-}
-
-h2 {
-  font-size: 2rem;
 }
 
 p {
@@ -546,7 +530,7 @@ p {
 }
 
 /* Neumorphic style */
-.neumorphic-circle {
+.neumorphic-square {
   border-radius: 8%;
   box-shadow:
     6px 6px 10px rgba(0, 0, 0, 0.25),

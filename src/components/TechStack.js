@@ -20,11 +20,11 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="tech-stack-container z-10 text-center">
+    <div className="tech-stack-container py-4 z-10 text-center">
       <h2 className="text-5xl my-6 py-3">Tech Stack</h2>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center pb-4 gap-8">
         {techs.map((tech, index) => (
-          <div key={index} className="card flex flex-col items-center neumorphic-circle justify-center w-24 h-24 bg-color2 shadow-neumorphic hover:shadow-neumorphicHover transform hover:translate-y-[-4px] transition-all">
+          <div key={index} className="card flex flex-col items-center neumorphic-square justify-center w-24 h-24 bg-color2 shadow-neumorphic hover:shadow-neumorphicHover transform hover:translate-y-[-4px] transition-all">
             <Image
               src={tech.icon}
               alt={tech.name}

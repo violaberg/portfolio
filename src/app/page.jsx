@@ -5,7 +5,7 @@ import portfolioImage from "/public/images/portfolio-img.JPEG";
 
 const Home = () => {
   return (
-    <div className="container flex items-center justify-center min-h-screen">
+    <div className="container flex items-center mx-auto justify-center min-h-screen">
         {/* Card with Text and Image */}
         <div className="card flex flex-col gap-6 items-center sm:items-start">
           {/* SVG Noise */}
@@ -35,7 +35,7 @@ const Home = () => {
             <h1 className="text-center">
               Viola Bergere
             </h1>
-            <h2 className="text-center">Full Stack Developer</h2>
+            <h2 className="text-3xl text-center">Full Stack Developer</h2>
             <p className="mt-4 text-center">
               Passionate about crafting innovative, user-friendly applications.
               Explore my work and let's bring ideas to life together!
