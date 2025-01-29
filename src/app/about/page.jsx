@@ -5,9 +5,10 @@ const page = () => {
     <div className="flex flex-col mx-auto items-center justify-center min-h-screen mt-36">
       <div className="card relative">
         <svg
-          viewBox="0 0 100% 100%"
-          xmlns="http://www.w3.org/2000/svg"
-          className="noise"
+          viewBox="0 0 1000 1000"
+            xmlns="http://www.w3.org/2000/svg"
+            className="noise w-full h-full absolute top-0 left-0"
+            preserveAspectRatio="none"
         >
           <filter id="noiseFilter">
             <feTurbulence

@@ -2,9 +2,10 @@ export default function Error403() {
   return (
     <div className="card">
       <svg
-        viewBox="0 0 100% 100%"
+        viewBox="0 0 1000 1000"
         xmlns="http://www.w3.org/2000/svg"
-        className="noise"
+        className="noise w-full h-full absolute top-0 left-0"
+        preserveAspectRatio="none"
       >
         <filter id="noiseFilter">
           <feTurbulence

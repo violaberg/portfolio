@@ -37,9 +37,10 @@ const GradientBackground = () => {
     <div className="gradient-bg top-0 left-0 h-full w-full fixed overflow-hidden">
       {/* Noise Background */}
       <svg
-        viewBox="0 0 100vw 100vw"
+        viewBox="0 0 1000 1000"
         xmlns="http://www.w3.org/2000/svg"
-        className="noiseBg absolute top-0 left-0 z-0"
+        className="noiseBg w-full h-full absolute top-0 left-0 z-0"
+        preserveAspectRatio="none"
       >
         <filter id="noiseFilterBg">
           <feTurbulence
