@@ -39,7 +39,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className="primaryBtn rounded-lg shadow-lg font-semibold px-3 py-2"
+            className="btnCard rounded-lg shadow-lg font-semibold px-3 py-2"
           >
             Contact
           </Link>
@@ -87,7 +87,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className="block font-semibold"
+            className="block btnCard rounded-lg shadow-lg font-semibold px-3 py-2"
             onClick={toggleMobileMenu}
           >
             Contact

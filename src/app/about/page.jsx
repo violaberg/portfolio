@@ -47,10 +47,10 @@ const page = () => {
               </p>
             </div>
           </section>
-          <div className="mx-auto text-center">
+          <div className="mx-auto text-center py-4">
             <a
               href="/contact"
-              className="primaryBtn rounded-lg shadow-lg font-semibold mt-3 p-3"
+              className="btnCard rounded-lg shadow-lg font-semibold mt-3 p-3"
             >
               Contact Me
             </a>

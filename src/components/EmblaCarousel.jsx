@@ -96,13 +96,13 @@ const EmblaCarousel = (props) => {
                 <div className="flex justify-between mt-2 px-4">
                   <button
                     onClick={() => window.open(project.repo, "_blank")}
-                    className="primaryBtn rounded-lg shadow-lg font-semibold p-3 flex-1 mr-2 cursor-pointer"
+                    className="btnCard rounded-lg shadow-lg font-semibold p-3 flex-1 mr-2 cursor-pointer"
                   >
                     Repo
                   </button>
                   <button
                     onClick={() => window.open(project.demo, "_blank")}
-                    className="primaryBtn rounded-lg shadow-lg font-semibold p-3 flex-1 ml-8"
+                    className="btnCard rounded-lg shadow-lg font-semibold p-3 flex-1 ml-8"
                   >
                     Live Site
                   </button>

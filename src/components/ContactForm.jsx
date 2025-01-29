@@ -77,7 +77,7 @@ function ContactForm({ onSubmit }) {
       <div className="text-center">
         <button
           type="submit"
-          className="primaryBtn rounded-lg shadow-lg font-semibold p-3"
+          className="btnCard rounded-lg shadow-lg font-semibold p-3"
         >
           Send Message
         </button>
