@@ -24,7 +24,7 @@ const page = () => {
               <rect width="100%" height="100%" preserveAspectRatio="xMidYMid meet" filter="url(#noiseFilter)" />
             </svg>
             <div className="content">
-              <h1 className="justify-self-center">
+              <h1 className="justify-self-center text-5xl p-4">
                 Contact Me
               </h1>
               <div className="w-full max-w-5xl mx-auto my-3 flex flex-col">

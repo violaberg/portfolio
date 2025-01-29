@@ -3,7 +3,7 @@ import TechStack from "@/components/TechStack";
 const page = () => {
   return (
     <div className="flex flex-col mx-auto items-center justify-center min-h-screen mt-36">
-      <div className="about-card relative">
+      <div className="card relative">
         <svg
           viewBox="0 0 100% 100%"
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const page = () => {
           <section className="flex flex-col md:flex-row items-center gap-8">
             {/* Text Section */}
             <div className="flex-1">
-              <h1 className="justify-self-center">About Me</h1>
+              <h1 className="justify-self-center text-5xl p-4">About Me</h1>
               <p className="pb-3">
                 Hi, I'm Viola, a passionate Full Stack Web Developer specializing in building user-focused, scalable applications. Proficient in technologies like React, Next.js, Django and Tailwind CSS, I enjoy tackling complex challenges and delivering seamless solutions that combine functionality with outstanding user experience.
               </p>

@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="noise shadow-lg p-3">
+    <nav className="noise flex fixed top-0 left-0 shadow-lg w-full items-center uppercase p-3">
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center">
@@ -84,13 +84,6 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
           >
             Projects
-          </Link>
-          <Link
-            href="/experience"
-            className="block font-semibold"
-            onClick={toggleMobileMenu}
-          >
-            Experience
           </Link>
           <Link
             href="/contact"

@@ -32,7 +32,7 @@ const Home = () => {
 
           {/* Text Section */}
           <div className="content flex-1">
-            <h1 className="text-center">
+            <h1 className="text-center text-5xl p-6">
               Viola Bergere
             </h1>
             <h2 className="text-3xl text-center">Full Stack Developer</h2>

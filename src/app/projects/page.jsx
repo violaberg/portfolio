@@ -7,7 +7,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 const page = () => {
   return (
     <div className="mt-36 min-h-screen">
-      <div className="project-main-card mx-auto">
+      <div className="card mx-auto">
         <svg
           viewBox="0 0 100% 100%"
           xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const page = () => {
           />
         </svg>
         <div className="content">
-          <h1 className="justify-self-center">Projects</h1>
+          <h1 className="justify-self-center text-5xl p-4">Projects</h1>
           <p className="text-center">
             These projects showcase my expertise through practical examples of
             my work, featuring brief descriptions, links to code repositories,

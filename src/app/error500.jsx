@@ -22,7 +22,7 @@ export default function Error500() {
         />
       </svg>
       <div className="content">
-        <h1 className="justify-self-center">Oops! Something went wrong.</h1>
+        <h1 className="justify-self-center text-5xl p-4">Oops! Something went wrong.</h1>
         <div className="mx-auto text-center my-3">
           <a
             href="/"

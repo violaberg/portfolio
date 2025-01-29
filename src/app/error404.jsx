@@ -22,7 +22,7 @@ export default function Error404() {
         />
       </svg>
       <div className="content">
-        <h1 className="justify-self-center">Not Found</h1>
+        <h1 className="justify-self-center text-5xl p-4">Not Found</h1>
         <div className="mx-auto text-center my-3">
           <a
             href="/"

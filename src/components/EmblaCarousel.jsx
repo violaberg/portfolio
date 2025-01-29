@@ -56,8 +56,8 @@ const EmblaCarousel = (props) => {
 
   return (
     <div className="embla">
-      <div className="embla__viewport rounded-lg mt-6" ref={emblaMainRef}>
-        <div className="embla__container">
+      <div className="embla__viewport overflow-hidden rounded-lg mt-6" ref={emblaMainRef}>
+        <div className="embla__container flex">
           {projects.map((project) => (
             <div className="embla__slide" key={project.id}>
               <div className="card max-w-sm w-full">
@@ -113,8 +113,8 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className="embla-thumbs">
-        <div className="embla-thumbs__viewport" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container">
+        <div className="embla-thumbs__viewport overflow-hidden" ref={emblaThumbsRef}>
+          <div className="embla-thumbs__container flex flex-row">
             {slides.map((index) => (
               <Thumb
                 key={index}
