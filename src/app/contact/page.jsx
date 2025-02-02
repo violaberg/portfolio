@@ -15,8 +15,8 @@ const page = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center min-h-screen">
-        <div className="card">
+      <div className="flex">
+        <div className="card relative">
             <svg viewBox="0 0 1000 1000"
                 xmlns="http://www.w3.org/2000/svg"
                 className="noise w-full h-full absolute top-0 left-0"
@@ -36,7 +36,7 @@ const page = () => {
                 </p>
                 {isSubmitted && (
                   <div className="w-full max-w-xl text-center flex flex-col font-semibold">
-                    <p>
+                    <p className="text-center py-2">
                       Thank you for your message! I will get back to you as soon as
                       possible.
                     </p>

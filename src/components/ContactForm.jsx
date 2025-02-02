@@ -1,14 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import PropTypes from "prop-types";
 
-function ContactForm({ onSubmit }) {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,13 +21,29 @@ function ContactForm({ onSubmit }) {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      onSubmit(formData);
+    setLoading(true);
+    setSuccess(null);
+    setError(null);
+
+    try {
+      const response = await fetch("/api/send_email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSuccess("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
-    } else {
-      alert("Please fill out all fields.");
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -78,16 +97,15 @@ function ContactForm({ onSubmit }) {
         <button
           type="submit"
           className="btnCard rounded-lg shadow-lg font-semibold p-3"
+          disabled={loading}
         >
-          Send Message
+          {loading ? "Sending..." : "Send Message"}
         </button>
       </div>
+      {success && <p className="text-green-500 font-semibold text-center mt-2">{success}</p>}
+      {error && <p className="text-red-500 font-semibold text-center py-2 mt-2">{error}</p>}
     </form>
   );
 }
-
-ContactForm.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default ContactForm;

@@ -2,7 +2,7 @@ import TechStack from "@/components/TechStack";
 
 const page = () => {
   return (
-    <div className="flex flex-col mx-auto items-center justify-center min-h-screen mt-36">
+    <div className="flex flex-col justify-center mt-36">
       <div className="card relative">
         <svg
           viewBox="0 0 1000 1000"

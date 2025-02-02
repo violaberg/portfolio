@@ -60,7 +60,7 @@ const EmblaCarousel = (props) => {
         <div className="embla__container flex">
           {projects.map((project) => (
             <div className="embla__slide" key={project.id}>
-              <div className="card max-w-sm w-full">
+              <div className="card relative max-w-sm w-full">
                 <svg
                   viewBox="0 0 1000 1000"
                   xmlns="http://www.w3.org/2000/svg"
