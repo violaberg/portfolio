@@ -5,7 +5,7 @@ import portfolioImage from "/public/images/portfolio-img.JPEG";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center mx-auto mt-6">
+    <div className="flex items-center justify-center mx-auto mt-32">
         {/* Card with Text and Image */}
         <div className="card flex flex-col relative gap-6 items-center sm:items-start">
           {/* SVG Noise */}
