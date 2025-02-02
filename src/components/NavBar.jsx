@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image'
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,22 +8,41 @@ import vbLogo from '/public/images/logo.png'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="noise flex fixed top-0 left-0 shadow-lg w-full items-center uppercase p-3">
+    <nav
+      className={`noise flex fixed top-0 left-0 shadow-lg w-full items-center uppercase p-3 transition-all duration-300 ${isScrolled ? 'bg-darkText bg-opacity-90' : 'bg-transparent'}`}
+    >
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
         {/* Logo and Name */}
         <Link href="/" className="flex items-center">
           <Image
-          src={vbLogo}
-          alt="logo"
-          width={40}
-          height={40}
-          className="h-full w-full" />
+            src={vbLogo}
+            alt="logo"
+            width={40}
+            height={40}
+            className="h-full w-full"
+          />
         </Link>
 
         {/* Desktop Navigation Links */}
@@ -53,7 +72,7 @@ export default function Navbar() {
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? (
-              <FaTimes className="text-2xl" />
+              <FaTimes className="text-2xl absolute top-5 right-5" />
             ) : (
               <FaBars className="text-2xl" />
             )}
@@ -63,7 +82,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden flex flex-col items-center px-4 py-3 space-y-4">
+        <div className="md:hidden flex flex-col items-center p-6 space-y-4">
           <Link
             href="/"
             className="block font-semibold"

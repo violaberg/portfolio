@@ -365,7 +365,7 @@ p {
 
 /* Carousel */
 .embla {
-  max-width: 48rem;
+  max-width: 40rem;
   margin: auto;
   width: 90vw;
   --slide-height: 19rem;
@@ -411,6 +411,10 @@ p {
 
 .embla-thumbs__slide--selected .btnCard {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-img {
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Tech Stack */

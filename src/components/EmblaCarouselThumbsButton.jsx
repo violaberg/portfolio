@@ -14,7 +14,7 @@ export const Thumb = (props) => {
       <button
         onClick={onClick}
         type="button"
-        className="embla-thumbs__slide__number btnCard rounded-lg text-base items-center justify-center font-semibold px-8 py-2"
+        className="embla-thumbs__slide__number btnCard rounded-lg text-base items-center justify-center font-semibold px-6 py-1"
       >
         {index + 1}
       </button>

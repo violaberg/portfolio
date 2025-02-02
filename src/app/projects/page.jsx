@@ -2,7 +2,7 @@ import EmblaCarousel from "@/components/EmblaCarousel";
 import { FaGithub } from "react-icons/fa";
 
 const OPTIONS = {}
-const SLIDE_COUNT = 8
+const SLIDE_COUNT = 4
 const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const page = () => {
