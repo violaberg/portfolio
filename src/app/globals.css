@@ -367,6 +367,7 @@ p {
 .embla {
   max-width: 48rem;
   margin: auto;
+  width: 90vw;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
@@ -385,14 +386,9 @@ p {
 }
 
 .embla__slide__number {
-  align-items: center;
-  border-radius: 1.8rem;
   box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
   display: flex;
-  font-size: 4rem;
-  font-weight: 600;
   height: var(--slide-height);
-  justify-content: center;
   user-select: none;
 }
 

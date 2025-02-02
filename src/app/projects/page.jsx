@@ -1,4 +1,5 @@
 import EmblaCarousel from "@/components/EmblaCarousel";
+import { FaGithub } from "react-icons/fa";
 
 const OPTIONS = {}
 const SLIDE_COUNT = 8
@@ -6,7 +7,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
 const page = () => {
   return (
-    <div className="flex flex-col mt-16">
+    <div className="flex flex-col mt-36">
       <div className="card relative">
         <svg
           viewBox="0 0 1000 1000"
@@ -39,11 +40,21 @@ const page = () => {
             adapt to diverse technologies but also my skill in collaborating
             effectively with teams under tight deadlines.
           </p>
+          <p className="pt-3">To explore all the projects I've contributed to, please visit my
+            <a
+            href="https://github.com/violaberg"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center pl-1 gap-1 transform transition font-semibold duration-300 hover:scale-105">
+            <span>GitHub</span>
+            <FaGithub className="shadow-lg mb-1" size={20} />
+            </a>
+          </p>
         </div>
       </div>
 
       {/* Projects Section */}
-      <div className="w-full max-w-6xl mx-auto px-4">
+      <div>
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
     </div>

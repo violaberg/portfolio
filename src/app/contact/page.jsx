@@ -1,6 +1,7 @@
 "use client";
 
 import "../../app/globals.css";
+import { FaLinkedin } from "react-icons/fa";
 
 import { useState } from "react";
 import ContactForm from "../../components/ContactForm";
@@ -32,7 +33,15 @@ const page = () => {
               </h1>
               <div className="w-full max-w-5xl mx-auto my-3 flex flex-col">
                 <p className="text-center">
-                  Got a question or would like to collaborate? Feel free to contact me by filling out this form. Alternatively, don't hesitate to reach out on <a href="https://www.linkedin.com/in/viola-bergere/" target="_blank" rel="noopener noreferrer" className="font-bold tracking-wider">LinkedIn</a>
+                  Got a question or would like to collaborate? Feel free to contact me by filling out this form. Alternatively, don't hesitate to reach out on
+                  <a
+                  href="https://www.linkedin.com/in/viola-bergere/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center pl-1 gap-1 transform transition font-semibold duration-300 hover:scale-105">
+                  <span>LinkedIn</span>
+                  <FaLinkedin className="shadow-lg mb-1" size={20} />
+                  </a>
                 </p>
                 {isSubmitted && (
                   <div className="w-full max-w-xl text-center flex flex-col font-semibold">

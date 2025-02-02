@@ -115,7 +115,7 @@ const EmblaCarousel = (props) => {
 
       <div className="embla-thumbs">
         <div className="embla-thumbs__viewport overflow-hidden" ref={emblaThumbsRef}>
-          <div className="embla-thumbs__container flex flex-row">
+          <div className="embla-thumbs__container flex flex-wrap gap-2">
             {slides.map((index) => (
               <Thumb
                 key={index}
