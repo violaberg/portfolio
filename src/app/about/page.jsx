@@ -1,4 +1,5 @@
 import TechStack from "@/components/TechStack";
+import aboutTechStack from "../data/aboutTechStack";
 
 const page = () => {
   return (
@@ -29,7 +30,7 @@ const page = () => {
           <section className="flex flex-col md:flex-row items-center gap-8">
             {/* Text Section */}
             <div className="flex-1">
-              <h1 className="justify-self-center text-5xl p-4">About Me</h1>
+              <h1 className="text-center text-5xl p-4">About Me</h1>
               <p className="pb-3">
                 Hi, I'm Viola, a passionate Full Stack Web Developer specializing in building user-focused, scalable applications. Proficient in technologies like React, Next.js, Django and Tailwind CSS, I enjoy tackling complex challenges and delivering seamless solutions that combine functionality with outstanding user experience.
               </p>
@@ -58,7 +59,10 @@ const page = () => {
         </div>
       </div>
       {/* Tech Stack Section */}
-      <TechStack />
+      <div className="tech-stack-container py-4 z-10 text-center">
+        <h2 className="text-5xl my-6 py-3">Tech Stack</h2>
+        <TechStack techs={aboutTechStack} />
+      </div>
     </div>
   );
 };
