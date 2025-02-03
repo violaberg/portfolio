@@ -31,6 +31,15 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+  if (isMobileMenuOpen) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+}, [isMobileMenuOpen]);
+
+
   return (
     <nav
       className={`noise flex fixed top-0 left-0 shadow-lg w-full items-center uppercase p-3 transition-all duration-300 ${
@@ -86,7 +95,15 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden flex flex-col items-center p-6 space-y-4">
+        <div className="fixed top-0 left-0 md:hidden flex flex-col items-center w-full p-6 space-y-4 backdrop-blur-lg bg-white/10 border border-white/20 z-50">
+          {/* Close Button (X) */}
+          <button
+            onClick={toggleMobileMenu}
+            className="absolute top-5 right-5 text-2xl"
+            aria-label="Close menu"
+          >
+            <FaTimes />
+          </button>
           <Link
             href="/"
             className={`block font-semibold tracking-wider hover:font-extrabold [&.active]:font-extrabold ${pathname === '/' ? 'active' : ''}`}
