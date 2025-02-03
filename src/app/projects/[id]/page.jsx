@@ -63,6 +63,11 @@ const ProjectPage = ({ params }) => {
               <p>{project.features}</p>
             </div>
 
+            <div className="key-features pt-4">
+              <h2 className="text-4xl font-semibold text-center pb-4">My Contribution</h2>
+              <p>{project.contribution}</p>
+            </div>
+
             <div className="tech-stack-container py-4 z-10 text-center">
               <h2 className="text-4xl font-semibold text-center pb-6">Tech Stack</h2>
               <TechStack techs={project.techStack} />

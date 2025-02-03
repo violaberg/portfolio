@@ -6,13 +6,14 @@ const projects = [
     image: "/images/project_1.png",
     repo: "https://github.com/violaberg/infinity-health-hub",
     demo: "https://infinity-hub-15161149b9fb.herokuapp.com/",
-    goal: 'The main goal of this project is to provide a solution for X.',
+    goal: "The main goal of this project is to provide a solution for X.",
     features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    contribution: "I contributed to the project by implementing X and Y.",
     techStack: [
-    { "name": "Python", "icon": "/icons/python.svg" },
-    { "name": "Django", "icon": "/icons/django.svg" },
-    { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" }
-  ],
+      { "name": "Python", "icon": "/icons/python.svg" },
+      { "name": "Django", "icon": "/icons/django.svg" },
+      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+    ],
   },
   {
     id: "2",
