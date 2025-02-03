@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import { FaBars, FaTimes } from "react-icons/fa";
 import vbLogo from '/public/images/logo.png'
@@ -9,6 +10,7 @@ import vbLogo from '/public/images/logo.png'
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -47,13 +49,13 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/" className="font-semibold pt-2">
+          <Link href="/" className={`font-semibold pt-2 tracking-wider hover:font-extrabold [&.active]:font-extrabold ${pathname === '/' ? 'active' : ''}`}>
             Home
           </Link>
-          <Link href="/about" className="font-semibold px-2 pt-2">
+          <Link href="/about" className={`font-semibold pt-2 tracking-wider hover:font-extrabold [&.active]:font-extrabold ${pathname === '/about' ? 'active' : ''}`}>
             About
           </Link>
-          <Link href="/projects" className="font-semibold pt-2">
+          <Link href="/projects" className={`font-semibold pt-2 tracking-wider hover:font-extrabold [&.active]:font-extrabold ${pathname === '/projects' ? 'active' : ''}`}>
             Projects
           </Link>
           <Link
