@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <nav
       className={`noise flex fixed top-0 left-0 shadow-lg w-full items-center uppercase p-3 transition-all duration-300 ${
-  isScrolled ? 'backdrop-blur-md bg-white/10 border border-white/20 shadow-lg rounded-lg' : 'bg-transparent'
+  isScrolled ? 'backdrop-blur-md bg-white/10 border border-white/20 shadow-lg' : 'bg-transparent'
 }`}
     >
       <div className="container mx-auto flex justify-between items-center my-2 p-2">
