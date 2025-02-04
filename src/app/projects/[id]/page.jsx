@@ -11,7 +11,8 @@ const ProjectPage = ({ params }) => {
   const project = projects.find((proj) => proj.id === id);
 
   if (!project) {
-    return <div className="text-center mt-10">Project not found</div>;
+    return <div className="text-center mt-10"><h2 className="text-5xl font-semibold py-4">Project not found</h2>
+      </div>;
   }
 
   return (
@@ -47,9 +48,9 @@ const ProjectPage = ({ params }) => {
             className="img-fluid w-3/4 mx-auto project-img shadow-lg rounded-lg"
           />
           {/* Content Section */}
-          <div className="content p-4">
+          <div className="content p-3">
             <div className="overview">
-              <h2 className="text-4xl font-semibold text-center pb-4">Overview</h2>
+              <h2 className="text-4xl font-semibold text-center py-4">Overview</h2>
               <p>{project.description}</p>
             </div>
 
@@ -60,10 +61,47 @@ const ProjectPage = ({ params }) => {
 
             <div className="key-features pt-4">
               <h2 className="text-4xl font-semibold text-center pb-4">Key Features</h2>
-              <p>{project.features}</p>
+              <ul className="list-inside space-y-2">
+                {project.features.map((feature, index) => {
+                  const [title, ...description] = feature.split(" – ");
+                  return (
+                    <li className="list-disc" key={index}>
+                      <span className="font-semibold">{title}</span> – {description.join(" – ")}
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
 
-            <div className="key-features pt-4">
+            <div className="color-scheme pt-4">
+              <h2 className="text-4xl font-semibold text-center pb-4">Color Scheme</h2>
+              {/* Ensure colorScheme is an array before using map */}
+              <div className="space-y-4">
+                {Array.isArray(project.colorScheme) && project.colorScheme.map((item, index) => {
+                  // Check for the intro type to render it separately
+                  if (item.type === "intro") {
+                    return (
+                      <p key={index}>
+                        {item.text}
+                      </p>
+                    );
+                  }
+                  
+                  // Render color and description if it's not the intro
+                  return (
+                    <div key={index} className="flex items-center space-x-4">
+                      <div 
+                        style={{ backgroundColor: item.color }} 
+                        className="w-3 h-3 rounded-full flex-shrink-0"
+                      ></div>
+                      <p>{item.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="contribution pt-4">
               <h2 className="text-4xl font-semibold text-center pb-4">My Contribution</h2>
               <p>{project.contribution}</p>
             </div>
@@ -73,7 +111,7 @@ const ProjectPage = ({ params }) => {
               <TechStack techs={project.techStack} />
             </div>
           </div>
-          <div className="flex justify-between mt-2 px-4">
+          <div className="flex justify-center mt-2 px-4">
             <button
               onClick={() => window.open(project.repo, "_blank")}
               className="btnCard rounded-lg shadow-lg font-semibold p-3 flex-1 mr-2 cursor-pointer"

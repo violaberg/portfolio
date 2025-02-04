@@ -22,22 +22,127 @@ const projects = [
     image: "/images/project_2.png",
     repo: "https://github.com/violaberg/bling-it",
     demo: "https://bling-it-242ac659e1b6.herokuapp.com/",
+    goal: "The main goal of this project is to provide a solution for X.",
+    features: ['Feature 1', 'Feature 2', 'Feature 3'],
+    contribution: "I contributed to the project by implementing X and Y.",
+    techStack: [
+      { "name": "Python", "icon": "/icons/python.svg" },
+      { "name": "Django", "icon": "/icons/django.svg" },
+      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+    ],
   },
   {
     id: "3",
     name: "Wine O'Clock",
-    description: "Wine O'Clock is a fictional wine cellar located in the heart of the Bordeaux wine region, France. This project invites wine enthusiasts to explore the rich history and traditions of winemaking. The site features a curated gallery, visitor reviews, and a blog covering all things wine. Whether you're a connoisseur or a beginner, Wine O'Clock offers something for everyone. For bookings or inquiries, a contact form is available.",
+    description: "Wine O'Clock is a fictional wine cellar nested in the heart of the world-renowned Bordeaux wine region in France. Born from my deep passion for wine and the enchanting allure of France, this project invites enthusiasts to embark on an unforgettable journey into the captivating realms of winemaking. The site shares a brief narrative about Wine O'Clock, offering a glimpse into its rich history and commitment to the craft. Immerse yourself in our curated gallery, adorned with exquisite photos captured by owners, reviews left by cherished visitors, creating a tapestry of memories that resonate with the essence of our vineyard, or read our blog if you crave some more info about all things wine. Whether you're a seasoned connoisseur or a curious explorer, Wine O'Clock has something for everyone. For booking or any additional information, our Contact form is at your disposal. Wine O'Clock beckons, a celebration of passion, tradition, and the timeless beauty of French winemaking.",
     image: "/images/project_3.png",
     repo: "https://github.com/violaberg/wine-o-clock",
     demo: "https://wine-o-clock-223a2b0e8720.herokuapp.com/",
+    goal: "The main goal of this project is to provide a solution for X.",
+    features: [
+      'Home Page – A welcoming page with a short quote.',
+      'About Page – Describes the mission and philosophy behind Wine O&apos;Clock, emphasizing its connection to the world of wine.',
+      'Gallery – A curated selection of images to look through uploaded by staff member to get a better feel of what vineyard has to offer.',
+      'Reviews – Customer testimonials sharing their experiences at Wine O&apos;Clock vineyard.',
+      'Blog – A space for posts and insights into wine-related topics.',
+      'Contact Page – A page with contact form for reaching out with questions, feedback or to book a visit.',
+      'User Register/ Login – The Wine O&apos;Clock website features user registration and login, enabling users to leave reviews and comments.',
+      'Responsive and Accessible Design – Optimized for all devices and includes accessibility features to ensure inclusivity.'
+    ],
+    colorScheme: [
+      {
+        type: "intro",
+        text: "The color palette for the Wine O'Clock app evokes a sense of timeless elegance and refined luxury, inspired by the world of wines. Soft, light tones create a serene foundation, symbolizing clarity and purity, while rich, warm hues infuse the design with sophistication and excellence. Accents of deep, bold shades introduce a touch of depth and complexity, reflecting the essence of aged wines and the world they come from. The carefully selected palette flows seamlessly, capturing the spirit of the winemaking journey from vine to cellar, and creating a harmonious visual experience that mirrors the luxury of Bordeaux wines."
+      },
+      {
+        color: "#fafafa",
+        description: "Seasalt is a soft and inviting shade symbolizing purity and clarity, reminiscent of the winemaking process."
+      },
+      {
+        color: "#daa520",
+        description: "Muted Gold represents the allure of gold, mirroring the excellence and sophistication associated with wines, bringing warmth to the project."
+      },
+      {
+        color: "#4c0013",
+        description: "Deep, juicy tones of bordeaux that evoke the essence of rich red wines, accentuating the luxurious world of Bordeaux wines."
+      },
+      {
+        color: "#000000",
+        description: "Classic Black represents the depth and complexity found in a perfectly aged bottle, embodying the rich history and quality of wine."
+      },
+    ],
+    contribution: "As the sole developer of the Wine O'Clock app, I was responsible for every aspect of its creation. From designing the user interface and crafting the user experience to setting up the backend and implementing secure user authentication, I handled all technical aspects. This project was developed as part of my full-stack diploma at Code Institute, allowing me to showcase my skills in both front-end and back-end development.",
+    techStack: [
+      { "name": "Python", "icon": "/icons/python.svg" },
+      { "name": "Django", "icon": "/icons/django.svg" },
+      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+    ],
   },
   {
     id: "4",
     name: "ForThe50",
-    description: "For the 50 aims to raise awareness about modern slavery, which affects an estimated 50 million people worldwide. Our mission is to shed light on this issue and give a voice to those affected. The platform provides essential tools to help identify modern slavery and offers resources, including contact information, to take action. Join us in standing up against this horrific crime and supporting the fight for freedom.",
+    description: "For the 50 is a platform dedicated to shedding light on modern slavery, which affects an estimated 50 million people worldwide—1 in every 150 individuals. While awareness is growing, much more needs to be done. This initiative aims to amplify the voices of those impacted, educate the public, and provide actionable resources. Beyond raising awareness, For the 50 equips users with the knowledge to recognize modern slavery, offers guidance on reporting, and connects individuals with essential support services. Together, we can take a stand and work toward a future free from exploitation.",
     image: "/images/project_4.png",
     repo: "https://github.com/violaberg/ForThe50",
     demo: "https://forthe50-67eaa7388853.herokuapp.com/",
+    goal: "This project aims to educate users on Modern Slavery and Human Trafficking, provide key contacts for reporting and support, and outline signs to recognize potential victims. It is designed for individuals seeking information, those looking for help or advice, and users who want to report suspected cases. The platform raises awareness with data-driven insights and survivor stories, provides key resources and reporting contacts, and empowers users with the knowledge to identify and address potential cases. It also ensures accessibility through responsive design and language options, making the information more inclusive and widely available.",
+    features: [
+      'Informative Home Page – Provides an overview of modern slavery and human trafficking, explaining its different forms, global impact, and the importance of awareness.',
+      'Survivor Stories – Shares real-life experiences from survivors, giving a human perspective to the issue and fostering empathy.',
+      'Knowledge Center – Offers educational resources to help users identify signs of modern slavery and understand how they can help.',
+      'Statistics Page – Displays data-driven insights using visually appealing graphs based on official reports from the UK and Ireland.',
+      'Report a Crime – Dedicated reporting page with a form that allows users to report suspected cases directly to relevant authorities.',
+      'Chatbot Support – An interactive chatbot that provides support to users.',
+      'Multi-Language Support – Provides language options to make the platform accessible to a wider audience.',
+      'Contact and Help Resources – Lists key contacts, including helplines and organizations that offer support for victims and those seeking advice.',
+      'Responsive and Accessible Design – Optimized for all devices and includes accessibility features to ensure inclusivity.'
+    ],
+    colorScheme: [
+      {
+        type: "intro",
+        text: "The color palette for ForThe50 was carefully chosen to ensure clarity, accessibility, and impact. Inspired by similar awareness-focused platforms, the colors create a clean and structured design that allows users to absorb critical information without unnecessary distractions."
+      },
+      {
+        color: "#ffffff",
+        description: "White represents purity and neutrality, allowing the focus to remain on the important information, with a sense of openness and clarity."
+      },
+      {
+        color: "#ffeb3b",
+        description: "Yellow symbolizes hope, attention, and urgency, encouraging users to act and raise awareness about modern slavery and human trafficking."
+      },
+      {
+        color: "#e41d24",
+        description: "Red represents danger, emergency, and the urgency of addressing the issue, highlighting the immediate need for action."
+      },
+      {
+        color: "#b1181d",
+        description: "Dark red conveys the serious, intense nature of modern slavery, reinforcing the gravity of the subject matter."
+      },
+      {
+        color: "#700000",
+        description: "Burgundy symbolizes depth, strength, and resilience, evoking a sense of determination in the fight against modern slavery."
+      },
+      {
+        color: "#cacaca",
+        description: "Light gray adds a subtle, neutral tone, helping to balance the intensity of other colors while maintaining a clean and simple design."
+      },
+      {
+        color: "#5e6572",
+        description: "Dark gray conveys seriousness, trust, and professionalism, grounding the design and giving users a sense of stability."
+      },
+      {
+        color: "#000000",
+        description: "Black represents the stark reality of modern slavery, creating contrast and drawing attention to the critical information."
+      }
+    ],
+    contribution: "I played a key role in shaping For the 50 by designing and developing the Statistics page, which presents impactful data through visually engaging charts created with Chart.js. I also contributed to the project's UI/UX, color scheme and font selection, ensuring accessibility and a cohesive visual identity. Additionally, I helped team members navigate version control, resolving merge conflicts and improving their understanding of collaborative development workflows.",
+    techStack: [
+      { "name": "Python", "icon": "/icons/python.svg" },
+      { "name": "Django", "icon": "/icons/django.svg" },
+      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+      { "name": "JavaScript", "icon": "/icons/javascript.svg" },
+      { "name": "ChartJS", "icon": "/icons/chartdotjs.svg" },
+    ],
   },
 ];
 
