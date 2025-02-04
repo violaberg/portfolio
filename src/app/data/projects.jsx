@@ -38,7 +38,7 @@ const projects = [
     image: "/images/project_3.png",
     repo: "https://github.com/violaberg/wine-o-clock",
     demo: "https://wine-o-clock-223a2b0e8720.herokuapp.com/",
-    goal: "The main goal of this project is to provide a solution for X.",
+    goal: "The goal of project was to create a fully responsive, user-friendly platform where wine enthusiasts can explore content, share their experiences, and connect with others. It includes comprehensive features for both users and admins, such as login and full CRUD functionality. The site encourages community interaction by allowing users to contribute photos and reviews, while fostering a passion for wine and travel.",
     features: [
       'Home Page – A welcoming page with a short quote.',
       'About Page – Describes the mission and philosophy behind Wine O&apos;Clock, emphasizing its connection to the world of wine.',
