@@ -16,7 +16,7 @@ const page = () => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex mt-36 mb-6">
         <div className="card relative">
             <svg viewBox="0 0 1000 1000"
                 xmlns="http://www.w3.org/2000/svg"
