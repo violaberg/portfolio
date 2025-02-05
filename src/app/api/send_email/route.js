@@ -25,9 +25,11 @@ export async function POST(req) {
     const response = await mg.messages.create(process.env.MAILGUN_DOMAIN, {
       from: `Contact Form <mailgun@${process.env.MAILGUN_DOMAIN}>`,
       to: [email],
-      subject: "Thanks for Contacting Us!",
-      text: `Hello ${name}, thanks for your message: ${message}`,
-      html: `<h1>Hello ${name}</h1><p>Thanks for your message:</p><blockquote>${message}</blockquote>`,
+      subject: "Thank You for Contacting Me!",
+      text: `Hello ${name}, Thank You for your message! I will get back to You as soon as
+                      possible. Here's a copy of your message: ${message}`,
+      html: `<h1>Hello ${name}</h1><p>Thank You for your message! I will get back to You as soon as
+                      possible. Here's a copy of your message:</p><blockquote>${message}</blockquote>`,
     });
 
     console.log("Mailgun response:", response);

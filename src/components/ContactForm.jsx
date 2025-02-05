@@ -38,7 +38,7 @@ function ContactForm() {
         throw new Error("Failed to send message");
       }
 
-      setSuccess("Message sent successfully!");
+      setSuccess("Form submitted successfully! I will get back to You as soon as possible. Thank You for Your message.");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
       setError(err.message);
