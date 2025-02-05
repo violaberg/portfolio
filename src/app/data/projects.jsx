@@ -18,23 +18,57 @@ const projects = [
   {
     id: "2",
     name: "Bling It",
-    description: "Bling It is a fictional e-commerce gemstone shop inspired by my love for diamonds and rubies. It offers a curated selection of gemstones, each with detailed specs, pricing, and images. Users can easily browse categories, add items to their wishlist, and leave reviews. The shop also features a secure checkout process for a smooth shopping experience.",
+    description: "Bling It is a fictional e-commerce gemstone shop inspired by my love for diamonds and rubies. It offers a curated selection of gemstones, each with detailed specs, pricing, and images. Users can easily browse categories, add items to their wishlist, and leave reviews.  This platform blends convenience, information, and passion for gemstones into a comprehensive digital marketplace. The shop also features a secure checkout process for a smooth shopping experience.",
     image: "/images/project_2.png",
     repo: "https://github.com/violaberg/bling-it",
     demo: "https://bling-it-242ac659e1b6.herokuapp.com/",
-    goal: "The main goal of this project is to provide a solution for X.",
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
-    contribution: "I contributed to the project by implementing X and Y.",
+    goal: "The goal of this project is to provide gemstone enthusiasts and collectors with an exceptional online shopping experience, create a fully responsive and user-friendly design, allowing seamless browsing across devices while ensuring it features a curated collection of gemstones with detailed descriptions, intuitive navigation, and advanced search capabilities. Have an option to create wishlists, leave reviews, and read others' experiences, as well as develop a secure checkout process with Stripe that ensures safe transactions, while SEO best practices enhance visibility.",
+    features: ['Product Management for Admins – Allows administrators to add, edit, update, and delete products as needed.',
+      'Contact Information Accessibility – Provides clear contact details for customer support and inquiries.',
+      'Categorized Gemstone Listings – Organizes products into specific categories for easier browsing.',
+      'Advanced Sorting and Search Functionality – Includes robust search capabilities and sorting options to help users find products efficiently.',
+      'Product Rating and Reviews – Allows users to leave reviews and ratings on products, enhancing community engagement.',
+      'Administrative Review Management – Provides admins with the ability to delete inappropriate or false reviews.',
+      'Order Confirmation Notifications – Sends confirmation emails to users after successful purchases.',
+      'Personalized User Profiles – Offers users a personalized profile to manage their information and view order history.',
+      'Wishlist Functionality – Enables users to save products for future reference or purchase.',
+      'Subscription Services – Allows users to subscribe to newsletters or updates for the latest information and promotions.',
+      'Interactive Contact Form – Allows users to reach out with questions or feedback through a user-friendly form.'
+    ],
+    colorScheme: [
+      {
+        type: "intro",
+        text: "The chosen color palette combines the purity of white with the warmth of goldenrod and the depth of midnight blue, creating a harmonious balance of sophistication and elegance. The colors work together to highlight the beauty of gemstones and create a luxurious, visually engaging and immersive experience for users."
+      },
+      {
+        color: "#ffffff",
+        description: "White represents purity and elegance. It serves as a clean and neutral backdrop, allowing other design elements to stand out vividly."
+      },
+      {
+        color: "#daa520",
+        description: "Goldenrod is a warm and luxurious yellow-gold color, reminiscent of precious metals and sun-kissed hues. It adds a touch of sophistication and vibrancy."
+      },
+      {
+        color: "#880101",
+        description: "Deep Red is a rich and intense hue that evokes a sense of passion and power. Its deep, ruby-like shade adds a touch of boldness and luxury, enhancing the visual impact and creating a striking contrast against lighter colors."
+      },
+      {
+        color: "#020c1b",
+        description: "Midnight Blue is a deep, rich shade of blue that conveys mystery, elegance, and depth. It provides a striking contrast and a sense of tranquility."
+      },
+    ],
+    contribution: "As this project was my final Full-Stack milestone project for the Code Institute diploma, specializing in e-commerce I developed it entirely on my own, handling everything from planning and design to backend and frontend implementation, as well as deployment. I designed and built a fully responsive and user-friendly interface using HTML, CSS, and JavaScript. The backend was developed with Django and PostgreSQL, ensuring secure user authentication and efficient data management. Integrated Stripe to provide a seamless and secure checkout experience. Full CRUD functionality was implemented, allowing users to manage their profiles, purchase products, and leave reviews. I also structured and optimized the database to support product management, order processing, and user interactions. Beyond development, I planned the business model, SEO strategy, and digital marketing approach to improve visibility and user engagement. SEO best practices were applied to enhance search rankings, and the project was successfully deployed on Heroku to ensure stability and performance. This project allowed me to refine my skills in e-commerce development, database management, and full-stack deployment while also deepening my understanding of marketing and business strategy.",
     techStack: [
       { "name": "Python", "icon": "/icons/python.svg" },
       { "name": "Django", "icon": "/icons/django.svg" },
       { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+      { "name": "AWS", "icon": "/icons/amazonwebservices.svg" },
     ],
   },
   {
     id: "3",
     name: "Wine O'Clock",
-    description: "Wine O'Clock is a fictional wine cellar nested in the heart of the world-renowned Bordeaux wine region in France. Born from my deep passion for wine and the enchanting allure of France, this project invites enthusiasts to embark on an unforgettable journey into the captivating realms of winemaking. The site shares a brief narrative about Wine O'Clock, offering a glimpse into its rich history and commitment to the craft. Immerse yourself in our curated gallery, adorned with exquisite photos captured by owners, reviews left by cherished visitors, creating a tapestry of memories that resonate with the essence of our vineyard, or read our blog if you crave some more info about all things wine. Whether you're a seasoned connoisseur or a curious explorer, Wine O'Clock has something for everyone. For booking or any additional information, our Contact form is at your disposal. Wine O'Clock beckons, a celebration of passion, tradition, and the timeless beauty of French winemaking.",
+    description: "Wine O'Clock is a fictional wine cellar nested in the heart of the world-renowned Bordeaux wine region in France. Born from my deep passion for wine and the enchanting allure of France, this project invites enthusiasts to embark on an unforgettable journey into the captivating realms of winemaking. The site shares a brief narrative about Wine O'Clock, offering a glimpse into its rich history and commitment to the craft. Immerse yourself in our curated gallery, adorned with exquisite photos captured by owners, reviews left by cherished visitors, creating a tapestry of memories that resonate with the essence of our vineyard, or read our blog if you crave some more info about all things wine. Whether you're a seasoned connoisseur or a curious explorer, Wine O'Clock has something for everyone.",
     image: "/images/project_3.png",
     repo: "https://github.com/violaberg/wine-o-clock",
     demo: "https://wine-o-clock-223a2b0e8720.herokuapp.com/",
