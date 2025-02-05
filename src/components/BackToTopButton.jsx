@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { TbSquareRoundedChevronUp } from "react-icons/tb";
+import { TbSquareRoundedChevronUpFilled } from "react-icons/tb";
 
 const BackToTopButton = () => {
 const [isVisible, setIsVisible] = useState(false)
@@ -48,7 +48,7 @@ return (
       onClick={scrollToTop}
       aria-label="Back to top"
     >
-      <TbSquareRoundedChevronUp
+      <TbSquareRoundedChevronUpFilled
         size={40}
       />
     </motion.button>
