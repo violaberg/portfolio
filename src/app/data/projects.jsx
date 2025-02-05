@@ -2,13 +2,55 @@ const projects = [
   {
     id: "1",
     name: "Infinity Health Hub",
-    description: "Infinity Health Hub is an online forum designed to support neurodivergent women at every life stage. It provides a safe space to connect, share experiences, and access tailored health resources — from mental health and reproductive care to pregnancy, postnatal support, and menopause. This project was developed during a Code Institute hackathon in collaboration with Trust in Soda, April 2024.",
+    description: "Infinity Health Hub is the premier online forum dedicated to providing tailored support for neurodivergent women at every stage of life. With a focus on how neurodiversity and life-stage interact in health considerations, Infinity Hub offers a safe and inclusive space where members can connect, share experiences, and access targeted health support. From sexual and mental health guidance in young adulthood to tailored reproductive health resources and holistic care guides during pregnancy, postnatal periods, and menopause, Infinity Hub is committed to empowering neurodivergent women to thrive across all life stages. Join our community and discover the support you need to navigate your well-being effectively and authentically. This site was created as part of a Code Institute hackathon in collaboration with Trust in Soda, April 2024.",
     image: "/images/project_1.png",
     repo: "https://github.com/violaberg/infinity-health-hub",
     demo: "https://infinity-hub-15161149b9fb.herokuapp.com/",
-    goal: "The main goal of this project is to provide a solution for X.",
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
-    contribution: "I contributed to the project by implementing X and Y.",
+    goal: "The goal of this project was to create a clear and informative platform dedicated to raising awareness about neurodivergent conditions and their impact on females. The site should offer tailored content based on the user’s life stage and neurodiversity, ensuring a personalized and relevant experience. Provides a safe and supportive space where users can engage at their own pace, allowing for a gradual and comfortable exploration of their identity. A moderated forum to encourage peer-to-peer discussions while maintaining a secure environment. Designed with accessibility and responsiveness in mind to ensure inclusivity and ease of use across all devices.",
+    features: [
+      'User Authentication – Users can register, log in, and manage their accounts securely, ensuring a personalized experience while accessing forum discussions and saving resources.',
+      'Accessible Information Resources – Guest users can browse and read articles to learn about neurodivergent conditions, with the option to filter content based on life stage and neurodiversity for a more relevant experience.',
+      'Moderated Broadcast Resources – Articles are created by site admins and available on the Resources page, ensuring reliable and curated information. Users can refine their reading by filtering articles based on life stage and neurodivergence.',
+      'Private, Moderated Peer-to-Peer Discussions – The discussion forum allows users to create posts tagged with specific life stages and neurodivergences, ensuring that only relevant users can view and engage in discussions. Replies and posts are moderated for safety and privacy.',
+      'Progressive Reveal & Anonymity Features – Users can create an alias instead of displaying their username and upload an avatar to maintain privacy. This allows for gradual identity sharing, offering comfort and security in engaging with the community.',
+      'Saved Articles – Users can save resources of interest to build a personalized reading list, making it easy to revisit helpful articles.',
+      'About Us – A dedicated section outlines the mission and values of the platform, explaining its commitment to supporting neurodivergent individuals.'
+    ],
+    colorScheme: [
+      {
+        type: "intro",
+        text: "The color palette for Infinity Health Hub is designed to create a welcoming and calming environment, ensuring accessibility and comfort for neurodivergent users. Soft, pastel tones provide a gentle and reassuring atmosphere, promoting ease of navigation and reducing visual stress. Warmer, earthy shades add a sense of grounding and stability, while deep, rich hues offer contrast for readability and emphasis. The harmonious balance of colors fosters an inclusive and engaging experience, reflecting the supportive and safe space that Infinity Health Hub aims to provide."
+      },
+      {
+        color: "#ffe4d1",
+        description: "A soft, pastel pink that brings warmth and comfort, evoking feelings of safety and inclusivity."
+      },
+      {
+        color: "#feeeba",
+        description: "A gentle, muted yellow that symbolizes positivity and awareness, creating an uplifting and engaging experience."
+      },
+      {
+        color: "#dbead5",
+        description: "A calming, natural green that represents growth, balance, and harmony, promoting a sense of stability."
+      },
+      {
+        color: "#f4f5e0",
+        description: "A delicate cream shade that enhances readability and provides a neutral backdrop for content."
+      },
+      {
+        color: "#404040",
+        description: "A deep gray that adds contrast for readability, ensuring an accessible and inclusive user experience."
+      },
+      {
+        color: "#033500",
+        description: "A rich, dark green that signifies depth, wisdom, and security, reinforcing the sense of trust within the community."
+      },
+      {
+        color: "#eeada0",
+        description: "A deeper shade of pink that introduces warmth and personality while maintaining a sense of calm and reassurance."
+      },
+    ],
+    contribution: "I contributed to this hackathon project by designing the logo and creating the About page, which includes an FAQ section. I also worked on the overall site styling, carefully selecting colors to ensure a visually accessible and non-overwhelming experience for users. Our team was fortunate to have a neurodivergent member who provided valuable insights into what works best for individuals like her, helping us refine the design for inclusivity and usability.",
     techStack: [
       { "name": "Python", "icon": "/icons/python.svg" },
       { "name": "Django", "icon": "/icons/django.svg" },
