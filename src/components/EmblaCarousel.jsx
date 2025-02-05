@@ -81,12 +81,14 @@ const EmblaCarousel = (props) => {
                   <button
                     onClick={() => window.open(project.repo, "_blank")}
                     className="btnCard rounded-lg shadow-lg font-semibold p-3 flex-1 mr-2 cursor-pointer"
+                    aria-label='View project repository'
                   >
                     Repo
                   </button>
                   <button
                     onClick={() => window.open(project.demo, "_blank")}
                     className="btnCard rounded-lg shadow-lg font-semibold p-3 flex-1 ml-8"
+                    aeia-label='View live site'
                   >
                     Live Site
                   </button>

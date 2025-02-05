@@ -98,6 +98,7 @@ function ContactForm() {
           type="submit"
           className="btnCard rounded-lg shadow-lg font-semibold p-3"
           disabled={loading}
+          aria-label="Send Message"
         >
           {loading ? "Sending..." : "Send Message"}
         </button>

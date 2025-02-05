@@ -52,7 +52,7 @@ export default function Navbar() {
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image src={vbLogo} alt="logo" width={40} style={{ height: "auto" }} />
+            <Image src={vbLogo} alt="logo, brings to home page" width={40} style={{ height: "auto" }} />
           </Link>
 
           {/* Desktop Navigation */}
