@@ -52,9 +52,9 @@ const projects = [
     ],
     contribution: "I contributed to this hackathon project by designing the logo and creating the About page, which includes an FAQ section. I also worked on the overall site styling, carefully selecting colors to ensure a visually accessible and non-overwhelming experience for users. Our team was fortunate to have a neurodivergent member who provided valuable insights into what works best for individuals like her, helping us refine the design for inclusivity and usability.",
     techStack: [
-      { "name": "Python", "icon": "/icons/python.svg" },
-      { "name": "Django", "icon": "/icons/django.svg" },
-      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "Django", icon: "/icons/django.svg" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
     ],
   },
   {
@@ -101,10 +101,11 @@ const projects = [
     ],
     contribution: "As this project was my final Full-Stack milestone project for the Code Institute diploma, specializing in e-commerce I developed it entirely on my own, handling everything from planning and design to backend and frontend implementation, as well as deployment. I designed and built a fully responsive and user-friendly interface using HTML, CSS, and JavaScript. The backend was developed with Django and PostgreSQL, ensuring secure user authentication and efficient data management. Integrated Stripe to provide a seamless and secure checkout experience. Full CRUD functionality was implemented, allowing users to manage their profiles, purchase products, and leave reviews. I also structured and optimized the database to support product management, order processing, and user interactions. Beyond development, I planned the business model, SEO strategy, and digital marketing approach to improve visibility and user engagement. SEO best practices were applied to enhance search rankings, and the project was successfully deployed on Heroku to ensure stability and performance. This project allowed me to refine my skills in e-commerce development, database management, and full-stack deployment while also deepening my understanding of marketing and business strategy.",
     techStack: [
-      { "name": "Python", "icon": "/icons/python.svg" },
-      { "name": "Django", "icon": "/icons/django.svg" },
-      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
-      { "name": "AWS", "icon": "/icons/amazonwebservices.svg" },
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "Django", icon: "/icons/django.svg" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
+      { name: "AWS", icon: "/icons/amazonwebservices.svg" },
+      { name: "Stripe", icon: "/icons/stripe.svg" },
     ],
   },
   {
@@ -149,9 +150,9 @@ const projects = [
     ],
     contribution: "As the sole developer of the Wine O'Clock app, I was responsible for every aspect of its creation. From designing the user interface and crafting the user experience to setting up the backend and implementing secure user authentication, I handled all technical aspects. This project was developed as part of my full-stack diploma at Code Institute, allowing me to showcase my skills in both front-end and back-end development.",
     techStack: [
-      { "name": "Python", "icon": "/icons/python.svg" },
-      { "name": "Django", "icon": "/icons/django.svg" },
-      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "Django", icon: "/icons/django.svg" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
     ],
   },
   {
@@ -213,11 +214,11 @@ const projects = [
     ],
     contribution: "I played a key role in shaping For the 50 by designing and developing the Statistics page, which presents impactful data through visually engaging charts created with Chart.js. I also contributed to the project's UI/UX, color scheme and font selection, ensuring accessibility and a cohesive visual identity. Additionally, I helped team members navigate version control, resolving merge conflicts and improving their understanding of collaborative development workflows.",
     techStack: [
-      { "name": "Python", "icon": "/icons/python.svg" },
-      { "name": "Django", "icon": "/icons/django.svg" },
-      { "name": "Bootstrap", "icon": "/icons/bootstrap.svg" },
-      { "name": "JavaScript", "icon": "/icons/javascript.svg" },
-      { "name": "ChartJS", "icon": "/icons/chartdotjs.svg" },
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "Django", icon: "/icons/django.svg" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
+      { name: "JavaScript", icon: "/icons/javascript.svg" },
+      { name: "ChartJS", icon: "/icons/chartdotjs.svg" },
     ],
   },
 ];

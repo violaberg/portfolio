@@ -38,7 +38,7 @@ function ContactForm() {
         throw new Error("Failed to send message");
       }
 
-      setSuccess("Form submitted successfully! I will get back to You as soon as possible. Thank You for Your message.");
+      setSuccess("Form submitted successfully! I will get back to You as soon as possible.");
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
       setError(err.message);
@@ -102,7 +102,7 @@ function ContactForm() {
           {loading ? "Sending..." : "Send Message"}
         </button>
       </div>
-      {success && <p className="text-green-500 font-semibold text-center mt-2">{success}</p>}
+      {success && <p className="text-emerald-500 font-semibold text-center pt-2 mt-2">{success}</p>}
       {error && <p className="text-red-500 font-semibold text-center py-2 mt-2">{error}</p>}
     </form>
   );

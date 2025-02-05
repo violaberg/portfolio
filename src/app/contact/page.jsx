@@ -43,14 +43,6 @@ const page = () => {
                   <FaLinkedin className="shadow-lg mb-1" size={20} />
                   </a>
                 </p>
-                {isSubmitted && (
-                  <div className="w-full max-w-xl text-center flex flex-col font-semibold">
-                    <p className="text-center py-2">
-                      Thank you for your message! I will get back to you as soon as
-                      possible.
-                    </p>
-                  </div>
-                )}
               </div>
               <ContactForm onSubmit={handleFormSubmit} />
             </div>
