@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import GradientBackground from "@/components/GradientBackground";
+import BackToTopButton from '@/components/BackToTopButton'
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
         <GradientBackground />
         <Navbar />
         <main className="flex min-h-screen items-center justify-center p-3">{children}</main>
+        <BackToTopButton />
         <Footer />
       </body>
     </html>

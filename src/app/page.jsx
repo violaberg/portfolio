@@ -50,7 +50,7 @@ const Home = () => {
               alt="Viola Bergere"
               className="profile-img rounded-lg mb-3 rotate-3"
               width={240}
-              height={240}
+              style={{ height: "auto" }}
             />
           </div>
         </div>
