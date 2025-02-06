@@ -1,6 +1,8 @@
 "use client";
 
+import Head from "next/head";
 import "../../app/globals.css";
+
 import { FaLinkedin } from "react-icons/fa";
 
 import { useState } from "react";
@@ -16,6 +18,9 @@ const page = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact | Viola Bergere</title>
+      </Head>
       <div className="flex mt-36 mb-6">
         <div className="card relative">
             <svg viewBox="0 0 1000 1000"
