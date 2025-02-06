@@ -19,7 +19,7 @@ const page = () => {
   return (
     <>
       <Head>
-        <title>Contact | Viola Bergere</title>
+        <title>Contact</title>
       </Head>
       <div className="flex mt-36 mb-6">
         <div className="card relative">

@@ -4,7 +4,7 @@ export default function Error403() {
   return (
     <>
       <Head>
-        <title>Restricted | Viola Bergere</title>
+        <title>Restricted</title>
       </Head>
       <div className="card relative">
         <svg

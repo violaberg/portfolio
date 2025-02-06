@@ -11,7 +11,7 @@ const page = () => {
   return (
     <>
       <Head>
-          <title>Projects | Viola Bergere</title>
+          <title>Projects</title>
       </Head>
       <div className="flex flex-col mt-36">
         <div className="card relative">

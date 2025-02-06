@@ -20,7 +20,7 @@ const ProjectPage = ({ params }) => {
   return (
     <>
       <Head>
-        <title>Project: {project.name} | Viola Bergere</title>
+        <title>Project: {project.name}</title>
       </Head>
       <div className="flex flex-col justify-center mt-36 mb-6">
         <div className="card relative max-w-sm w-full mb-4">

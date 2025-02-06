@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <Head>
-          <title>Home | Viola Bergere</title>
+          <title>Home</title>
       </Head>
       <div className="flex items-center justify-center mx-auto mt-32">
           {/* Card with Text and Image */}

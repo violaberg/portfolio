@@ -4,7 +4,7 @@ export default function Error500() {
   return (
     <>
       <Head>
-        <title>Server Error | Viola Bergere</title>
+        <title>Server Error</title>
       </Head>
       <div className="card relative">
         <svg

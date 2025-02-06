@@ -4,7 +4,7 @@ export default function Error404() {
   return (
     <>
       <Head>
-        <title>Not Found | Viola Bergere</title>
+        <title>Not Found</title>
       </Head>
       <div className="card relative">
         <svg
