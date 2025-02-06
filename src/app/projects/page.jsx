@@ -1,7 +1,10 @@
-import Head from "next/head";
-
 import EmblaCarousel from "@/components/EmblaCarousel";
 import { FaGithub } from "react-icons/fa";
+
+export const metadata = {
+  title: "Projects",
+  description: "Explore my portfolio of web development projects, including hackathon collaborations, personal works, and team contributions. Each project demonstrates my technical skills, problem-solving abilities, and passion for creating innovative solutions."
+};
 
 const OPTIONS = {}
 const SLIDE_COUNT = 4
@@ -10,9 +13,6 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 const page = () => {
   return (
     <>
-      <Head>
-          <title>Projects</title>
-      </Head>
       <div className="flex flex-col mt-36">
         <div className="card relative">
           <svg

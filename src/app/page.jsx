@@ -1,15 +1,14 @@
-"use client";
-
-import Head from 'next/head';
 import Image from "next/image";
 import portfolioImage from "/public/images/portfolio-img.JPEG";
+
+export const metadata = {
+  title: "Viola Bergere | Home",
+  description: "Welcome to Viola Bergere's portfolio website. Full Stack Developer specializing in creating innovative web applications with modern technologies. View my projects and experience in software development.",
+};
 
 const Home = () => {
   return (
     <>
-      <Head>
-          <title>Home</title>
-      </Head>
       <div className="flex items-center justify-center mx-auto mt-32">
           {/* Card with Text and Image */}
           <div className="card flex flex-col relative gap-6 items-center sm:items-start">

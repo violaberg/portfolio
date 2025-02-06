@@ -1,14 +1,14 @@
-import Head from "next/head";
-
 import TechStack from "@/components/TechStack";
 import aboutTechStack from "../data/aboutTechStack";
+
+export const metadata = {
+  title: "About",
+  description: "Learn more about Viola Bergere - Full Stack Web Developer specializing in React, Next.js and Django. Discover my journey, skills, and passion for creating impactful web applications.",
+};
 
 const page = () => {
   return (
     <>
-      <Head>
-        <title>About</title>
-      </Head>
       <div className="flex flex-col justify-center mt-36">
         <div className="card relative mx-auto">
           <svg
