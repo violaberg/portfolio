@@ -11,7 +11,6 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
-    default: "Viola Bergere | Full Stack Developer",
     template: "%s | Viola Bergere",
   },
   description: "Passionate about crafting innovative, user-friendly applications.",
