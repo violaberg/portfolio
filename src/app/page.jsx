@@ -4,7 +4,7 @@ import NoiseBackground from "@/components/NoiseBackground";
 
 export const metadata = {
   title: "Viola Bergere | Home",
-  description: "Welcome to Viola Bergere's portfolio website. Full Stack Developer specializing in creating innovative web applications with modern technologies. View my projects and experience in software development.",
+  description: "Welcome to my portfolio website. I'm a Full Stack Developer specializing in creating innovative web applications with modern technologies. View my projects and experience in software development.",
 };
 
 const Home = () => {
