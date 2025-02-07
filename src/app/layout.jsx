@@ -5,7 +5,7 @@ import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import GradientBackground from "@/components/GradientBackground";
 import BackToTopButton from '@/components/BackToTopButton'
-import { GoogleAnalytics } from "@/components/GoogleAnalytics";
+import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${montserrat.className} h-full relative`}>
         <GradientBackground />
-        <GoogleAnalytics />
+        <Analytics />
         <SpeedInsights />
         <Navbar />
         <main className="flex min-h-screen items-center justify-center p-3">{children}</main>
