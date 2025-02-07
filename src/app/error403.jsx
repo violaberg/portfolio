@@ -1,11 +1,11 @@
-import Head from "next/head";
+export const metadata = {
+  title: "Viola Bergere | Restricted Area",
+  description: "You do not have permission to access this page.",
+};
 
 export default function Error403() {
   return (
     <>
-      <Head>
-        <title>Restricted</title>
-      </Head>
       <div className="card relative">
         <svg
           viewBox="0 0 1000 1000"

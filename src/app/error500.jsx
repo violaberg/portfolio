@@ -1,11 +1,11 @@
-import Head from 'next/head';
+export const metadata = {
+  title: "Viola Bergere | Server Error",
+  description: "An unexpected error occurred. Please try again later.",
+};
 
 export default function Error500() {
   return (
     <>
-      <Head>
-        <title>Server Error</title>
-      </Head>
       <div className="card relative">
         <svg
           viewBox="0 0 1000 1000"

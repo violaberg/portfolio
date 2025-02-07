@@ -1,11 +1,11 @@
-import Head from "next/head";
+export const metadata = {
+  title: "Viola Bergere | Not Found",
+  description: "The page you are looking for does not exist.",
+};
 
 export default function Error404() {
   return (
     <>
-      <Head>
-        <title>Not Found</title>
-      </Head>
       <div className="card relative">
         <svg
           viewBox="0 0 1000 1000"
