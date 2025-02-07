@@ -147,7 +147,7 @@ export default function Navbar() {
       {/* Push Content Down When Menu Opens */}
       <div
         className={`transition-all duration-300 ${
-          isMobileMenuOpen ? "mt-40" : "mt-0"
+          isMobileMenuOpen ? "mt-44" : "mt-0"
         }`}
       ></div>
     </>
