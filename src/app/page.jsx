@@ -1,5 +1,6 @@
 import Image from "next/image";
 import portfolioImage from "/public/images/portfolio-img.JPEG";
+import NoiseBackground from "@/components/NoiseBackground";
 
 export const metadata = {
   title: "Viola Bergere | Home",
@@ -12,29 +13,7 @@ const Home = () => {
       <div className="flex items-center justify-center mx-auto mt-32">
           {/* Card with Text and Image */}
           <div className="card flex flex-col relative gap-6 items-center sm:items-start">
-            {/* SVG Noise */}
-            <svg
-              viewBox="0 0 1000 1000"
-              xmlns="http://www.w3.org/2000/svg"
-              className="noise w-full h-full absolute top-0 left-0"
-              preserveAspectRatio="none"
-            >
-              <filter id="noiseFilter">
-                <feTurbulence
-                  type="fractalNoise"
-                  baseFrequency="0.85"
-                  numOctaves="6"
-                  stitchTiles="stitch"
-                />
-              </filter>
-              <rect
-                width="100%"
-                height="100%"
-                preserveAspectRatio="xMidYMid meet"
-                filter="url(#noiseFilter)"
-              />
-            </svg>
-
+            <NoiseBackground />
             {/* Text Section */}
             <div className="content flex-1">
               <h1 className="text-center text-5xl p-6">

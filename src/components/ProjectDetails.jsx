@@ -1,6 +1,7 @@
 "use client";
 
 import TechStack from "./TechStack";
+import NoiseBackground from "./NoiseBackground";
 
 const ProjectDetails = ({ project }) => {
   if (!project) {
@@ -14,27 +15,7 @@ const ProjectDetails = ({ project }) => {
   return (
     <div className="flex flex-col justify-center mt-36 mb-6">
       <div className="card relative max-w-sm w-full mb-4">
-        <svg
-          viewBox="0 0 1000 1000"
-          xmlns="http://www.w3.org/2000/svg"
-          className="noise w-full h-full absolute top-0 left-0"
-          preserveAspectRatio="none"
-        >
-          <filter id="noiseFilter">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.85"
-              numOctaves="6"
-              stitchTiles="stitch"
-            />
-          </filter>
-          <rect
-            width="100%"
-            height="100%"
-            preserveAspectRatio="xMidYMid meet"
-            filter="url(#noiseFilter)"
-          />
-        </svg>
+        <NoiseBackground />
         <h1 className="text-5xl text-center pb-6">{project.name}</h1>
         <img
           src={project.image}

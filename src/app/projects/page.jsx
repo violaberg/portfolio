@@ -1,5 +1,6 @@
 import EmblaCarousel from "@/components/EmblaCarousel";
 import { FaGithub } from "react-icons/fa";
+import NoiseBackground from "@/components/NoiseBackground";
 
 export const metadata = {
   title: "Projects",
@@ -15,27 +16,7 @@ const page = () => {
     <>
       <div className="flex flex-col mt-36">
         <div className="card relative">
-          <svg
-            viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-            className="noise w-full h-full absolute top-0 left-0"
-            preserveAspectRatio="none"
-          >
-            <filter id="noiseFilter">
-              <feTurbulence
-                type="fractalNoise"
-                baseFrequency="0.85"
-                numOctaves="6"
-                stitchTiles="stitch"
-              />
-            </filter>
-            <rect
-              width="100%"
-              height="100%"
-              preserveAspectRatio="xMidYMid meet"
-              filter="url(#noiseFilter)"
-            />
-          </svg>
+          <NoiseBackground />
           <div className="content">
             <h1 className="text-center text-5xl p-4">Projects</h1>
             <p>

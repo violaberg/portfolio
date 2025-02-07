@@ -17,11 +17,14 @@
 - [React.js](https://react.dev/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vercel](https://vercel.com/)
+- [Vercel Analytics](https://vercel.com/docs/analytics)
+- [Vercel Speed Insights](https://vercel.com/docs/speed-insights)
 - [Favicon generator](https://www.favicon-generator.org/) - Favicon and apple icon
 - [Canva](https://www.canva.com/) - Logo
 - [Embla Carousel](https://www.embla-carousel.com/) - Project carousel
 - [Simple Icons](https://simpleicons.org/) - Tech icons
 - [Mailgun](https://www.mailgun.com/) - Contact form functionality
+- [CompressPNG](https://compresspng.com/) - Image compressor
 
 ## Typography
 
@@ -40,12 +43,18 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/app/buildin
 
 |   PAGE                                     | LIGHTHOUSE SCREENSHOT                                     |
 |--------------------------------------------|-----------------------------------------------------------|
-|   Desktop                                  |                                                           |
+| Desktop                                  |                                                           |
 | Home                                       |<details><summary>Home Page</summary><img src="public/images/desktop-home.png"></details>|
 | About                                      |<details><summary>About Page</summary><img src="public/images/desktop-about.png"></details>|
 | Projects                                   |<details><summary>Projects</summary><img src="public/images/desktop-projects.png"></details>|
 | Project Detail Page                        |<details><summary>Project Detail Page</summary><img src="public/images/desktop-project-page.png"></details>|
 | Contact                                    |<details><summary>Contact</summary><img src="public/images/desktop-contact.png"></details>|
+| Mobile                                  |                                                           |
+| Home                                       |<details><summary>Home Page</summary><img src="public/images/mobile-home.png"></details>|
+| About                                      |<details><summary>About Page</summary><img src="public/images/mobile-about.png"></details>|
+| Projects                                   |<details><summary>Projects</summary><img src="public/images/mobile-projects.png"></details>|
+| Project Detail Page                        |<details><summary>Project Detail Page</summary><img src="public/images/mobile-project-page.png"></details>|
+| Contact                                    |<details><summary>Contact</summary><img src="public/images/mobile-contact.png"></details>|
 
 ## Credits
 
