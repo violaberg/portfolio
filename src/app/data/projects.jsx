@@ -221,6 +221,67 @@ const projects = [
       { name: "ChartJS", icon: "/icons/chartdotjs.svg" },
     ],
   },
+  {
+    id: "5",
+    name: "SparkSync",
+    description: "SparkSync is a modern digital dating platform designed to foster meaningful and authentic connections. It emphasizes inclusivity, welcoming individuals of all backgrounds, genders, and orientations. User safety is a top priority, with features like AI-driven security, profile verification, and user-controlled boundaries. The platform offers enhanced matchmaking, allowing users to find compatible partners based on shared values, interests, and relationship goals. With a personalized experience, users can customize their preferences and dating journey. SparkSync aims to create a supportive community where everyone feels safe, heard, and valued. Join SparkSync today to embark on your journey towards meaningful connections.",
+    image: "/images/project_5-min.png",
+    repo: "https://github.com/violaberg/dating-app",
+    demo: "https://sparksync-7438f8dc8240.herokuapp.com/",
+    goal: "The primary goal of SparkSync is to create a digital dating platform that focuses on fostering meaningful connections, ensuring user safety, promoting inclusivity, and providing an accessible user experience.",
+    features: [
+      'Home Page – A modern and inviting homepage that introduces SparkSync and its mission.',
+      'Sign Up & Login – A seamless registration and login process for users to create and access their profiles.',
+      'Profile Creation – Users can build detailed profiles with preferences, interests, and a photo.',
+      'Messaging System – Secure in-app messaging for meaningful conversations.',
+      'Safety & Security – Profile verification, privacy controls, and reporting features to ensure a safe dating experience.',
+      'Inclusivity & Accessibility – Designed to be welcoming for all genders, sexual orientations, and backgrounds, with an intuitive user experience.',
+      'Personalized Preferences – Users can filter and refine their matches based on specific dating preferences.',
+      'Mobile-Friendly Design – Fully responsive platform optimized for all devices.',
+    ],
+    colorScheme: [
+      {
+        type: "intro",
+        text: "The color scheme combines deep, romantic burgundies with neutral tones to create an elegant and intimate atmosphere. The rich red hues evoke passion and warmth, symbolizing the spark of connection and romance. The soft, neutral shades provide a calming backdrop, ensuring readability and accessibility."
+      },
+      {
+        color: "#fafafa",
+        description: "Seasalt was used for content areas requiring high brightness and clarity."
+      },
+      {
+        color: "#f5f5ee",
+        description: "Cool ivory was used in main background gradient, providing a slighty warmer, inviting atmosphere while being easier on the eyes."
+      },
+      {
+        color: "#fa9ca1",
+        description: "Pink adds a soft, romantic touch to features."
+      },
+      {
+        color: "#520408",
+        description: "Light burgundy was used for hover states and secondary elements."
+      },
+      {
+        color: "#2d0709",
+        description: "Dark burgundy adds depth and sophistication."
+      },
+      {
+        color: "#b10009",
+        description: "Red was added as accent color for important elements."
+      },
+      {
+        color: "#1b1b1b",
+        description: "Charcoal was used for main text providing strong contrast and readability."
+      },
+    ],
+    contribution: "As the SCRUM lead, I ensured the team remained organized and efficient by managing a Kanban board. I also contributed to development by overseeing Git workflows, designing the user interface, and implementing key pages, including the Team, FAQ, Privacy Policy, and Contact pages.",
+    techStack: [
+      { name: "Python", icon: "/icons/python.svg" },
+      { name: "Django", icon: "/icons/django.svg" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.svg" },
+      { name: "Resend", icon: "/icons/resend.svg" },
+      { name: "Redis", icon: "/icons/redis.svg" },
+    ],
+  },
 ];
 
 export default projects;
