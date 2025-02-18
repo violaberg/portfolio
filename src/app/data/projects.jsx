@@ -273,7 +273,7 @@ const projects = [
         description: "Charcoal was used for main text providing strong contrast and readability."
       },
     ],
-    contribution: "As the SCRUM lead, I ensured the team remained organized and efficient by managing a Kanban board. I also contributed to development by overseeing Git workflows, designing the user interface, and implementing key pages, including the Team, FAQ, Privacy Policy, and Contact pages.",
+    contribution: "As the SCRUM lead for this hackathon project (2nd place), I ensured the team remained organized and efficient by managing a Kanban board. I also contributed to development by overseeing Git workflows, designing the user interface, and implementing key pages, including the Team, FAQ, Privacy Policy, and Contact pages.",
     techStack: [
       { name: "Python", icon: "/icons/python.svg" },
       { name: "Django", icon: "/icons/django.svg" },
