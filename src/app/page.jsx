@@ -10,9 +10,8 @@ export const metadata = {
 const Home = () => {
   return (
     <>
-      <div className="flex items-center justify-center mx-auto mt-32">
           {/* Card with Text and Image */}
-          <div className="card flex flex-col relative gap-6 items-center sm:items-start">
+          <div className="card flex flex-col items-center sm:items-start mx-auto mt-32 gap-6">
             <NoiseBackground />
             {/* Text Section */}
             <div className="content flex-1">
@@ -40,7 +39,6 @@ const Home = () => {
           </div>
 
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
-      </div>
     </>
   );
 };
