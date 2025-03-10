@@ -1,4 +1,5 @@
 import EmblaCarousel from "@/components/EmblaCarousel";
+import SocialLink from "@/components/SocialLink"; 
 import { FaGithub } from "react-icons/fa";
 import NoiseBackground from "@/components/NoiseBackground";
 
@@ -27,16 +28,11 @@ const page = () => {
               adapt to diverse technologies but also my skill in collaborating
               effectively with teams under tight deadlines.
             </p>
-            <p className="pt-3">To explore all the projects I've contributed to, please visit my
-              <a
-              href="https://github.com/violaberg"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center pl-1 gap-1 transform transition font-semibold duration-300 hover:scale-105">
-              <span>GitHub</span>
-              <FaGithub className="shadow-lg mb-1" size={20} />
-              </a>
-            </p>
+            <div className="pt-3">To explore all the projects I've contributed to, please visit my
+              <span className="inline-flex font-semibold pl-1"> Github
+                <SocialLink Icon={FaGithub} url="https://github.com/violaberg" className="items-center pl-1" size={24}/>
+                </span>
+            </div>
           </div>
         </div>
 

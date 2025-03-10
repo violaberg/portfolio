@@ -1,4 +1,5 @@
 import "../app/globals.css";
+import SocialLink from '../components/SocialLink'; 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -7,24 +8,8 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col items-center justify-center py-2">
         <p>© {new Date().getFullYear()} Viola Bergere | All rights reserved</p>
         <div className="flex gap-4 mt-2">
-          <a
-            href="https://github.com/violaberg"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transform transition duration-300 hover:scale-110"
-            aria-label="Viola's GitHub profile"
-          >
-            <FaGithub className="shadow-lg" size={28} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/viola-bergere/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transform transition duration-300 hover:scale-110"
-            aria-label="Viola's LinkedIn profile"
-          >
-            <FaLinkedin className="shadow-lg" size={28} />
-          </a>
+          <SocialLink Icon={FaGithub} url="https://github.com/violaberg" />
+          <SocialLink Icon={FaLinkedin} url="https://www.linkedin.com/in/viola-bergere/" />
         </div>
       </div>
     </footer>
