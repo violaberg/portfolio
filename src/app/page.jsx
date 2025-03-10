@@ -34,6 +34,7 @@ const Home = () => {
                 className="profile-img rounded-lg mb-3 rotate-3"
                 width={240}
                 style={{ height: "auto" }}
+                priority={true}
               />
             </div>
           </div>
