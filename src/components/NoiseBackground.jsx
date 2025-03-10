@@ -1,3 +1,5 @@
+import React from 'react';
+
 const NoiseBackground = () => {
   return (
     <svg
@@ -6,22 +8,25 @@ const NoiseBackground = () => {
       className="noise w-full h-full absolute top-0 left-0"
       preserveAspectRatio="none"
     >
-      <filter id="noiseFilter">
-        <feTurbulence
-          type="fractalNoise"
-          baseFrequency="0.85"
-          numOctaves="6"
-          stitchTiles="stitch"
-        />
-      </filter>
+      <defs>
+        <filter id="noiseFilter">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.85"
+            numOctaves="6"
+            stitchTiles="stitch"
+            seed="5" // Add a seed to make it consistent
+          />
+        </filter>
+      </defs>
       <rect
         width="100%"
         height="100%"
-        preserveAspectRatio="xMidYMid meet"
         filter="url(#noiseFilter)"
       />
     </svg>
   );
 };
 
-export default NoiseBackground;
+// Memoize the component to prevent unnecessary re-renders
+export default React.memo(NoiseBackground);
