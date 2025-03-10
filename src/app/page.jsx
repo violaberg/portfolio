@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portfolioImage from "/public/images/portfolio-img.JPEG";
+import portfolioImage from "/public/images/portfolio-img.webp";
 import NoiseBackground from "@/components/NoiseBackground";
 
 export const metadata = {
