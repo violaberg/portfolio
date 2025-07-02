@@ -356,7 +356,7 @@ const projects = [
       { name: "ExpressJS", icon: "/icons/express.svg" },
       { name: "React", icon: "/icons/react.svg" },
       { name: "Typescript", icon: "/icons/typescript.svg" },
-      { name: "Tailwind", icon: "/icons/tailwind.svg" },
+      { name: "Tailwind", icon: "/icons/tailwindcss.svg" },
     ],
   },
 ];
