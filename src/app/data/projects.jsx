@@ -282,6 +282,83 @@ const projects = [
       { name: "Redis", icon: "/icons/redis.svg" },
     ],
   },
+  {
+    id: "6",
+    name: "Dottie",
+    description: "Dottie is an open source project. An AI-powered symptom checker designed specifically for adolescent girls and their caregivers to distinguish between normal and abnormal menstruation patterns, delivered through a friendly, approachable digital mascot.",
+    image: "/images/project_6.png",
+    repo: "https://github.com/violaberg/dottie",
+    demo: "https://dottie-lmcreans-projects.vercel.app/",
+    goal: "To empower adolescent girls with knowledge about their menstrual health through accessible, friendly AI-powered guidance. The project aims to provide a safe space for users to learn about menstruation, understand their bodies, and make informed decisions about their health.",
+    features: [
+      'AI-powered symptom assessment tailored to menstrual patterns, delivering personalized guidance on what is normal and when to seek medical advice.',
+      'Friendly 3D mascot interface designed to reduce stigma and make interactions approachable and comforting.',
+      'Light and dark mode support, ensuring visual comfort and accessibility across different user environments.',
+      'Conversation-style chat interface, guiding adolescents and caregivers through assessments with age-appropriate language.',
+      'Personalized educational content, offering explanations tailored to users’ age and health literacy.',
+      'Symptom-to-action recommendations, helping users decide whether their symptoms are normal, need monitoring, or require medical attention.',
+      'Progressive Web App (PWA) capabilities, including manifest configuration and cross-device compatibility for an app-like experience.',
+      'Responsive design and mobile-friendly UI, including a sheet-style mobile navbar and smooth layout transitions across devices.',
+    ],
+    colorScheme: [
+      {
+        color: "#ffffff",
+        description: "Pure white for main backgrounds and text contrast."
+      },
+      {
+        color: "#fdf2f8",
+        description: "Very light pink background used for soft, feminine sections."
+      },
+      {
+        color: "#db2777",
+        description: "Bright pink accent color for primary buttons and highlights."
+      },
+      {
+        color: "#be185d",
+        description: "Deeper pink for hover states and darker pink accents."
+      },
+      {
+        color: "#f1f5f9",
+        description: "Light blue-gray background for clean, neutral sections."
+      },
+      {
+        color: "#f2f2f2",
+        description: "Light neutral gray for background areas and cards."
+      },
+      {
+        color: "#e2e8f0",
+        description: "Medium light gray for subtle borders and dividers."
+      },
+      {
+        color: "#4b5563",
+        description: "Dark gray for secondary text and less prominent elements."
+      },
+      {
+        color: "#27272a",
+        description: "Very dark gray for primary headings and important text."
+      },
+      {
+        color: "#020817",
+        description: "Near-black color for high contrast text and dark elements."
+      },
+      {
+        color: "#1f2937",
+        description: "Dark gray background for dark theme sections."
+      },
+      {
+        color: "#111827",
+        description: "Very dark gray for primary dark theme backgrounds."
+      },
+    ],
+    contribution: "As a contributor and designated Code Owner for the Dottie 3D mascot project, I helped shape the visual identity and user experience of the application. I enhanced the 3D teardrop mascot by refining the eye highlights, smoothing the model’s geometry, and adjusting the mouth shape to create a more approachable and expressive character. I implemented a dark mode toggle using Tailwind CSS, with a focus on accessibility and eye comfort, including global variables and intuitive sun and moon icons. To improve readability and maintain consistency, I updated the UI’s color palette to use higher-contrast shades throughout the app. I also reworked the favicon setup and introduced a valid site.webmanifest file to improve support for progressive web app features and cross-device compatibility. On the navigation side, I rebuilt the mobile navbar into a modern sheet-style drawer, improving interaction and layout responsiveness for both logged-in and logged-out users. As a Code Owner, I regularly reviewed and approved pull requests, ensured code quality, and opened new issues to guide and support the ongoing development of the project.",
+    techStack: [
+      { name: "NodeJS", icon: "/icons/node.svg" },
+      { name: "ExpressJS", icon: "/icons/express.svg" },
+      { name: "React", icon: "/icons/react.svg" },
+      { name: "Typescript", icon: "/icons/typescript.svg" },
+      { name: "Tailwind", icon: "/icons/tailwind.svg" },
+    ],
+  },
 ];
 
 export default projects;
